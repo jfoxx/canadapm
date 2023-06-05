@@ -148,13 +148,6 @@ header .nav-brand {
   display: flex;
 }
 
-header .nav-brand > p:first-of-type {
-   margin-right: 1em;
-   padding: 1em 1em 1em 0; 
-   border-right: 2px solid white;
-   width: auto;
-}
-
 header .nav-brand > p {
   flex: none;
   white-space: break-lines;
@@ -163,6 +156,15 @@ header .nav-brand > p {
   flex-direction: column;
   justify-content: center;
 }
+
+header .nav-brand > p:first-of-type {
+   margin-right: 1em;
+   padding: 1em 1em 1em 0; 
+   border-right: 2px solid white;
+   width: auto;
+}
+
+
 
 
 header nav .nav-brand img {
