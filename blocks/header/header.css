@@ -1,6 +1,7 @@
 /* header and nav layout */
 header .nav-wrapper {
-  background-color: var(--background-color);
+  background-color: #700f1e;
+  color: white;
   width: 100%;
   z-index: 2;
   position: fixed;
@@ -141,14 +142,33 @@ header nav[aria-expanded="true"] .nav-hamburger-icon::after {
 /* brand */
 header .nav-brand {
   grid-area: brand;
-  flex-basis: 128px;
-  font-size: var(--heading-font-size-s);
-  font-weight: 700;
+  flex-basis: 300px;
+  font-size: 12px;
   line-height: 1;
+  display: flex;
 }
 
+header .nav-brand > p {
+  flex: none;
+  white-space: break-lines;
+  width: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+header .nav-brand > p:first-of-type {
+   margin-right: 1em;
+   padding: 1em 1em 1em 0; 
+   border-right: 2px solid white;
+   width: auto;
+}
+
+
+
+
 header nav .nav-brand img {
-  width: 128px;
+  width: 85px;
   height: auto;
 }
 
@@ -266,10 +286,23 @@ header nav .nav-sections ul > li > ul > li {
 
   header nav .nav-sections > ul > li > ul > li {
     padding: 8px 0;
+    color: #700f1e; 
   }
 }
 
 /* tools */
 header nav .nav-tools {
   grid-area: tools;
+  display: flex;
+
+}
+
+header nav .nav-tools p:first-of-type {
+  padding-right: 1em;
+  border-right: 1px solid white;
+  margin-right: 1em;
+}
+
+header nav .nav-tools .icon-search svg {
+  fill: white;
 }
