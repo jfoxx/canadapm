@@ -20,7 +20,7 @@
   --text-color: #000;
 
   /* fonts */
-  --body-font-family: 'helvetica neue', helvetica, ubuntu, roboto, noto, sans-serif;
+  --body-font-family: 'Open Sans', 'helvetica neue', helvetica, ubuntu, roboto, noto, sans-serif;
   --heading-font-family: 'Bitter', serif;;
   --fixed-font-family: 'Roboto Mono', menlo, consolas, 'Liberation Mono', monospace;
 
@@ -61,6 +61,7 @@ body {
   color: var(--text-color);
   background-color: var(--background-color);
   display: none;
+  font-weight: 400;
 }
 
 body.appear {
@@ -152,7 +153,8 @@ a.button:any-link, button {
 }
 
 a.button:hover, a.button:focus, button:hover, button:focus  {
-  background-color: var(--link-hover-color);
+  background-color: #700f1e;
+  color: white;
   cursor: pointer;
 }
 
