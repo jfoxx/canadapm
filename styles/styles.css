@@ -21,7 +21,7 @@
 
   /* fonts */
   --body-font-family: 'helvetica neue', helvetica, ubuntu, roboto, noto, sans-serif;
-  --heading-font-family: var(--body-font-family);
+  --heading-font-family: 'Bitter', serif;;
   --fixed-font-family: 'Roboto Mono', menlo, consolas, 'Liberation Mono', monospace;
 
   /* body sizes */
@@ -31,11 +31,11 @@
 
   /* heading sizes */
   --heading-font-size-xxl: 48px;
-  --heading-font-size-xl: 40px;
-  --heading-font-size-l: 32px;
-  --heading-font-size-m: 24px;
-  --heading-font-size-s: 20px;
-  --heading-font-size-xs: 18px;
+  --heading-font-size-xl: 1.3rem;
+  --heading-font-size-l: 1.2rem;
+  --heading-font-size-m: 1.1rem;
+  --heading-font-size-s: 1rem;
+  --heading-font-size-xs: .9rem;
 
   /* nav height */
   --nav-height: 64px;
@@ -44,12 +44,12 @@
 
 @media (min-width: 900px) {
   :root {
-    --heading-font-size-xxl: 60px;
-    --heading-font-size-xl: 48px;
-    --heading-font-size-l: 36px;
-    --heading-font-size-m: 30px;
-    --heading-font-size-s: 24px;
-    --heading-font-size-xs: 22px;
+    --heading-font-size-xxl: 48px;
+    --heading-font-size-xl: 1.5rem;
+    --heading-font-size-l: 1.4rem;
+    --heading-font-size-m: 1.3rem;
+    --heading-font-size-s: 1.2rem;
+    --heading-font-size-xs: 1.1rem;
   }
 }
 
@@ -137,19 +137,18 @@ a.button:any-link, button {
   display: inline-block;
   box-sizing: border-box;
   text-decoration: none;
-  border: 2px solid transparent;
+  border: 2px solid #700f1e;
   padding: 5px 30px;
   text-align: center;
   font-style: normal;
   font-weight: 600;
   cursor: pointer;
-  color: var(--background-color);
-  background-color: var(--link-color);
+  color: #700f1e;
+  background-color: white;
   margin: 16px 0;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  border-radius: 30px;
 }
 
 a.button:hover, a.button:focus, button:hover, button:focus  {
@@ -204,9 +203,12 @@ main blockquote p::after {
 }
 
 main img {
-  max-width: 100%;
+  max-width: 40%;
   width: auto;
   height: auto;
+  float: left;
+  margin-right: 2em;
+  margin-bottom: 2em;
 }
 
 .icon {
