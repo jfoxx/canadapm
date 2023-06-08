@@ -37,3 +37,13 @@
     width: 80px;
     height: 80px;
 }
+
+.banner > div > div:last-of-type {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner > div > div:last-of-type p {
+    margin: 0;
+}
