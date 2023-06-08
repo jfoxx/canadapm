@@ -74,7 +74,6 @@ export function decorateMain(main) {
   decorateSections(main);
   decorateBlocks(main);
   splitColumns(main);
-
 }
 
 /**
