@@ -5,7 +5,7 @@
 .banner-wrapper {
     background-color: #700f1e;
     max-width: 100% !important;
-    width: 100%;
+    width: auto;
     padding-left: calc((100% - 1200px) / 2);
 }
 

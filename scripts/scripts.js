@@ -7,9 +7,11 @@ import {
   decorateIcons,
   decorateSections,
   decorateBlocks,
+  decorateBlock,
   decorateTemplateAndTheme,
   waitForLCP,
   loadBlocks,
+  loadBlock,
   loadCSS,
 } from './lib-franklin.js';
 
@@ -28,6 +30,22 @@ function buildHeroBlock(main) {
     section.append(buildBlock('hero', { elems: [picture, h1] }));
     main.prepend(section);
   }
+}
+
+function splitColumns(main) {
+  const parent = main.querySelector('.default-content-wrapper');
+  const primary = document.createElement('div');
+  const aside = document.createElement('aside');
+  primary.className = 'primary-content';
+  aside.className = 'aside-content';
+  primary.innerHTML = parent.innerHTML;
+  parent.innerHTML = '';
+  parent.append(primary);
+  parent.append(aside);
+  const twitterBlock = buildBlock('twitter', '');
+  aside.append(twitterBlock);
+  decorateBlock(twitterBlock);
+  return loadBlock(twitterBlock);
 }
 
 /**
@@ -55,6 +73,7 @@ export function decorateMain(main) {
   buildAutoBlocks(main);
   decorateSections(main);
   decorateBlocks(main);
+  splitColumns(main);
 }
 
 /**
