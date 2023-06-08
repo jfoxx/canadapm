@@ -1,0 +1,49 @@
+.section.banner-container {
+    padding:0;
+}
+
+.banner-wrapper {
+    background-color: #700f1e;
+    max-width: 100% !important;
+    width: 100%;
+    padding-left: calc((100% - 1200px) / 2);
+}
+
+.banner {
+    padding: 15px 0;
+    color: white;
+    font-family: Bitter, serif;
+}
+
+.banner img {
+    display: inline-block;
+    width: 50%;
+    vertical-align: middle;
+    border-radius: 50%;
+    margin: 2% 0 2% 15%;
+}
+
+.banner > div {
+    display: flex;
+}
+
+.banner > div > div:first-of-type {
+    margin-right: 2em;
+    border-right: 1px solid white;
+    text-align: center;
+}
+
+.banner .icon-coatofarms {
+    width: 80px;
+    height: 80px;
+}
+
+.banner > div > div:last-of-type {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner > div > div:last-of-type p {
+    margin: 0;
+}
