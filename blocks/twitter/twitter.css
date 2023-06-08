@@ -1,5 +1,5 @@
 .twitter > img {
-  max-width: 100%;
-  width: auto;
+  max-width: initial;
+  width: 338px;
   margin: 0;
 }
