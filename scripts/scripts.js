@@ -41,11 +41,11 @@ function splitColumns(main) {
   primary.innerHTML = parent.innerHTML;
   parent.innerHTML = '';
   parent.append(primary);
-  parent.append(aside);
   const twitterBlock = buildBlock('twitter', '');
   aside.append(twitterBlock);
   decorateBlock(twitterBlock);
-  return loadBlock(twitterBlock);
+  loadBlock(twitterBlock);
+  parent.append(aside);
 }
 
 /**
