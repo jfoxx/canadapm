@@ -43,6 +43,7 @@ function splitColumns(main) {
   parent.append(primary);
   const twitterBlock = buildBlock('twitter', '');
   aside.append(twitterBlock);
+  decorateBlock(twitterBlock);
   parent.append(aside);
 }
 
@@ -53,7 +54,6 @@ function splitColumns(main) {
 function buildAutoBlocks(main) {
   try {
     buildHeroBlock(main);
-    splitColumns(main);
   } catch (error) {
     // eslint-disable-next-line no-console
     console.error('Auto Blocking failed', error);
@@ -72,6 +72,7 @@ export function decorateMain(main) {
   buildAutoBlocks(main);
   decorateSections(main);
   decorateBlocks(main);
+  splitColumns(main);
 }
 
 /**
