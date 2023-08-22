@@ -44,6 +44,7 @@ function splitColumns(main) {
   const twitterBlock = buildBlock('twitter', '');
   aside.append(twitterBlock);
   decorateBlock(twitterBlock);
+  loadBlock(twitterBlock);
   parent.append(aside);
 }
 
